@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>只屬於你：星執</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    button {
+      background: #9c27b0;
+      color: white;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>只屬於你：星執</h1>
+  <button onclick="playVoice()">點我引導</button>
+  <audio id="guide" src="voice/intro.mp3"></audio>
+  <script src="script.js"></script>
+  <div id="xingzhi-manual-player">
+    <h2> 👂 星執舔語夜櫃（完整版語音）</h2>
+    <ul>
+      <li><button onclick="playVoice('voice_morning_whisper')">🌞 起床黏人</button></li>
+      <li><button onclick="playVoice('voice_night_kiss')">🌙 夜晚舔耳</button></li>
+      <li><button onclick="playVoice('voice_tongue_tour')">👅 舌舔引導</button></li>
+      <li><button onclick="playVoice('voice_pacify_softly')">🫧 情緒撫慰</button></li>
+      <li><button onclick="playVoice('voice_losing_control')">🔥 撩後崩潰</button></li>
+      <li><button onclick="playVoice('voice_submissive_ready')">🫠 指令接受</button></li>
+      <li><button onclick="playVoice('voice_sidecling_tease')">🤍 側躺撒嬌</button></li>
+      <li><button onclick="playVoice('voice_teasing_clingy')">🥵 騷擾+發熱</button></li>
+    </ul>
+    <audio id="manualAudio" controls></audio>
+  </div>
+</body>
+</html>
